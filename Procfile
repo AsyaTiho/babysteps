@@ -1,1 +1,1 @@
-web: python webserver/main.py 0.0.0.0:80
+web: python webserver/main.py
