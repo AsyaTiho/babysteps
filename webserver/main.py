@@ -6,16 +6,18 @@ DIRECTORY = './webserver/web'
 API_EP = '/api/v1'
 app = Flask("Webserver", static_url_path='/', static_folder=DIRECTORY)
 
-@app.route('/')
-def send_root():
-    log.info('Request: {}', request)
-    return send_from_directory(DIRECTORY, 'index.html')
-
 @app.route(API_EP + '/poor_ratio', methods=['POST'])
 def poor_ratio():
     log.info('Request: {}', request)
     log.info('Request json: {}', request.json)
-    return jsonify({"ratio": 0.5})
+    import random
+    ratio = random.random()
+    return jsonify({"ratio": ratio})
+
+@app.route('/')
+def send_root():
+    log.info('Request: {}', request)
+    return send_from_directory(DIRECTORY, 'index.html')
 
 def main():
     HOST = '0.0.0.0'
