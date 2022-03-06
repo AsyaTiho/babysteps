@@ -20,8 +20,10 @@ function submit(){
         data.json().then(json=>{
             console.log('JSON: ', json)
             const ratio = json.ratio;
-            const text = "You are poorer in " + ratio + " times";
-            result_el.innerHTML = text;
+            result_el.style.visibility = 'visible';
+            const ratio_el = document.getElementById("ratio");
+            const text = ratio.toFixed(2);
+            ratio_el.innerHTML = text;
         })
     })
 }
