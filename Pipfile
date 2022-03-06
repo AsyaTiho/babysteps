@@ -9,6 +9,8 @@ verify_ssl = true
 pandas = "*"
 jupyterlab = "*"
 matplotlib = "*"
+flask = "*"
+loguru = "*"
 
 [requires]
 python_version = "3.7"

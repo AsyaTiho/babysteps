@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>How poor are you?</title>
+    <link rel="stylesheet" href="style.css">
+    <link />
+</head>
+<script src="main.js"></script>
+
+<body>
+    <div class="main">
+        <h1>
+            How poor are you compared to your past?
+        </h1>
+        <div class="form">
+            <div class="input">
+                <label class="label" for="price">Price:</label>
+                <input type="text" id="price" placeholder="Enter your price">
+            </div>
+
+
+            <div class="input">
+                <label class="label" for="year">Year:</label>
+                <input type="text" id="year" placeholder="Enter year to compare">
+            </div>
+
+            <input class="button" type="button" value="Submit" onclick="submit()">
+        </div>
+        <div style="visibility: hidden;" id="result">
+            You are poorer in <span id="ratio"></span> times
+            compared to your past.
+        </div>
+    </div>
+</body>
+
+</html>
