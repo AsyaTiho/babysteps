@@ -14,3 +14,13 @@ test_year = '2021'
 test_price = 15000
 r = calc_poor_ratio(test_price, test_year)
 print(r)
+
+"""
+TODO
+1. How to import "*.py" files in python Anna: if the file in the same directory, you can just import 'name of the file'
+2. How to call a function defined in other file. (function is separated from its usage) Anna: you can use from 'name of the file' import 'function'
+3. Where python looks for files when you try to import something. Anna: I guess it searches through the directory, and it can only find it if its in the same directory. To find the file in a different folder, we need to indicate the entire path to it. For example, ./name of the folder/ name of the file.
+4. What happens when python imports a file. Anna: It employs the function of that file?
+5. Should you delete lines 13-16 or move to separate file (eg test_poor_ratio.py), or 
+   should you keep them? Anna: It doesnt seem like a necessary action to move them to a different file
+"""
