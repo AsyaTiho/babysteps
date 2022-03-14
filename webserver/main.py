@@ -1,6 +1,7 @@
 from flask import Flask, send_from_directory, request, jsonify
 from loguru import logger as log
 import sys, os
+sys.path.append('.')
 from file import calc_poor_ratio
 
 DIRECTORY = './webserver/web'
